@@ -1,0 +1,96 @@
+/* basic  */
+a:link,a:hover,a:active,a:visited{
+    color: inherit;
+    text-decoration: none;
+}
+
+section{
+    margin: auto;
+}
+
+article{
+    padding: 1rem;
+}
+
+@media screen and (max-width:799px){
+    section{
+        width: 100%;
+    }
+}
+@media screen and (min-width:800px) and (max-width:1280px){
+    section{
+        margin: 0 5%;
+    }
+}
+@media screen and (min-width:1281px){
+    section{
+        margin: 0 10%;
+    }
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.item{
+    display: inline-block;
+}
+
+.g1{
+    flex-grow: 1;
+}
+.g2{
+    flex-grow: 2;
+}
+.g3{
+    flex-grow: 3;
+}
+.g4{
+    flex-grow: 4;
+}
+.no-shrink{
+    flex-shrink: 0;
+}
+/* .main-center{
+    justify-content: center;
+}
+
+.cross-center{
+   align-content: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.self-center{
+    align-self: center;
+} */
+
+/* shape */
+.btn:hover{
+    font-weight: bolder;
+}
+
+/* nones - 반드시 가장 마지막에 정의할 것*/
+
+@media screen and (max-width:799px){
+    .no-mobile{
+        display: none;
+    }
+}
+@media screen and (min-width:800px){
+    .no-computer{
+        display: none;
+    }
+}
+
+.off{
+    display: none;
+}
