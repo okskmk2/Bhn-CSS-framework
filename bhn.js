@@ -26,3 +26,23 @@ var on = function (params) {
         params.target.style.display = "initial";
     }
 }
+
+var toggleOff = function (params) {
+    if (typeof params == "string") {
+        document.querySelector(params).classList.toggle('off');
+    } else if (params instanceof Node) {
+        params.classList.toggle('off');
+    } else if (params instanceof Event) {
+        params.target.classList.toggle('off');
+    }
+}
+
+var toggleOn = function (params) {
+    if (typeof params == "string") {
+        document.querySelector(params).classList.toggle('on');
+    } else if (params instanceof Node) {
+        params.classList.toggle('on');
+    } else if (params instanceof Event) {
+        params.target.classList.toggle('on');
+    }
+}
